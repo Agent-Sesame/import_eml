@@ -2,9 +2,11 @@ runMe <- function() {
 
 # buyer beware :)
 # written in a Mac OSX environment
-# presumes project runs from a GitHub directory immediately below user dir      
+# to use this code snippet in Windows, this script needs a rewrite
+# presumes project runs from a GitHub directory immediately below user home dir
 # presumes environment already has tm.plugin.mail package downloaded from CRAN
-# tried to explain how this code works with comments throughout code.
+# presumes environment already has tm package downloaded from CRAN
+# presumes zip files are manually unpacked, with .eml files saved to 'emails'
 # the way this package and example works is definitely backwards from other 
           # import packages I've used
 
@@ -21,10 +23,16 @@ runMe <- function() {
 
           setwd("~/GitHub/import_eml/emails")
 
-          # this long comment refers to line 38 to 39
+          # this long comment refers to line 46 to 47 as a narrative
           # create object called 'emlData' from tm package 'VCorpus' function
-          # emlData will contain the contents from your imported .eml files
-          # the 'DirSource' function is an argument to the 'VCorpus' function
+          # when this function runs and completes, the environment object 
+                    # 'emlData' will contain the contents from your imported 
+                    # .eml files
+          # I'm guessing the 'tm.plugin.mail' is an extension of the tm package,
+                    # as such, the intent of the plugin writers was to expand
+                    # the data import capabilities of the VCorpus function.
+          # the 'emlData' environment object is a function of 'VCorpus' function
+          # 'VCorpus' function's first argument is 'DirSource' 
           # 'DirSource' returns working directory information for 'VCorpus'
           # 'VCorpus' next argument is 'readerControl' which is equal to 'list'
           # 'list' is a function to construct a list with 'reader' as argument
@@ -41,10 +49,11 @@ runMe <- function() {
           # the double < < operator isn't best practice but after the code runs, 
           # this operator will leave you an object in the project environment
           # to visually inspect. I like this while debugging a project. you can
-          # fix this up as you improve and complete this project.
+          # fix and remove this bad practice shortcut so you complete this 
+          # project.
 
           # the next line prints emlData summary information to console to
-          # demonstrate the code worked.
+          # demonstrate the code actually did something.
           
           inspect(emlData)
           
