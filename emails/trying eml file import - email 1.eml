@@ -1,0 +1,19 @@
+MIME-Version: 1.0
+Date: Fri, 19 Aug 2022 10:39:36 -0700
+Message-ID: <CA+FgvxpVoWBb9iVNryzDG-CBcYQwkaF8jOgJ46NKM61-V=1k3A@mail.gmail.com>
+Subject: trying eml file import - email 1
+From: x z <xz@gmail.com>
+To: abc@abc.com
+Content-Type: multipart/alternative; boundary="000000000000f2fd2605e69b940f"
+
+--000000000000f2fd2605e69b940f
+Content-Type: text/plain; charset="UTF-8"
+
+trying eml file import - email 1
+
+--000000000000f2fd2605e69b940f
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">trying eml file import - email 1</div>
+
+--000000000000f2fd2605e69b940f--
